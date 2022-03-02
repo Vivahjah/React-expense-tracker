@@ -12,7 +12,7 @@ const AddTransaction = () => {
         e.preventDefault()
 
         const newTransaction = {
-            id : Math.floor(Math.random) * 100,
+            id : Math.floor(Math.random()* 100) ,
             text,
             amount : +amount
             
