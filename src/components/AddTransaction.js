@@ -11,6 +11,16 @@ const AddTransaction = () => {
     const onSubmit = e => {
         e.preventDefault()
 
+        if(!text){
+            alert('Add a text')
+            return
+        }
+        if(!amount){
+            alert('Add an Amount')
+            return
+        }
+    
+
         const newTransaction = {
             id : Math.floor(Math.random()* 100) ,
             text,
