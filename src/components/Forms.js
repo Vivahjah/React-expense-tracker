@@ -1,7 +1,7 @@
 import React from 'react'
 
 const Forms = ({ setInputText, setTodos, todos, inputText , setStatus}) => {
-
+        //setting the value to the useState
     const inputTextHandler = (e) => setInputText (e.target.value);
 
     const submitHandler = (e) => {
@@ -11,7 +11,7 @@ const Forms = ({ setInputText, setTodos, todos, inputText , setStatus}) => {
             return; //Do not submit if inputText is empty
         }
 
-        //create a new Todo
+        //create a new Todo list item
         setTodos([...todos, {text: inputText, completed: false, id: Math.random() * 10}]);
 
         //Clear the input Text
